@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guess The Number!</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/normalize.css" title="" type="" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css" title="" type="" />
+  </head>
+
+  <% if session[:result] %>
+    <div class="alert-box success">
+      <%= session[:result] %>
+    </div>
+  <% end %>
+
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+
+</html>
